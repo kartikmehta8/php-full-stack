@@ -1,0 +1,12 @@
+
+
+
+$per= "select * from allocate where allocate_qty_in_store = '$allocate_qty_in_store' allocate_qty = '$allocate_qty' ";
+$per_cri= ($_POST['allocate_qty_in_store']/$_POST['allocate_qty'])*100;
+
+
+
+$total= "select * from allocate where allocate_qty='$allocate_qty' allocate_qty_in_store='$allocate_qty_in_store'";
+            $per=($allocate_qty_in_store/$allocate_qty)*100;
+            if ($per <=10)
+            {
